@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/website/static/media/flower_restaurant.de215b56.jpeg"
   },
   {
-    "revision": "5931ccaa94ae9a1ecd7d",
-    "url": "/website/static/css/main.59db185a.chunk.css"
+    "revision": "15410911430e15fe4e63",
+    "url": "/website/static/css/main.be38f9af.chunk.css"
   },
   {
     "revision": "5d5c9b08d2a43d119853",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/website/static/media/flower_paint.1eae404c.jpeg"
   },
   {
-    "revision": "5931ccaa94ae9a1ecd7d",
-    "url": "/website/static/js/main.5931ccaa.chunk.js"
+    "revision": "15410911430e15fe4e63",
+    "url": "/website/static/js/main.15410911.chunk.js"
   },
   {
     "revision": "ac45e1ba7fa3fde95e6a75917d82fe16",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/website/static/media/na.9b96e284.png"
   },
   {
-    "revision": "004210d77fa1995a2a86aa5703d139f7",
+    "revision": "27337a9602d8bcb5cd9ec8139ab5f64e",
     "url": "/website/index.html"
   }
 ];
