@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "de215b566a0b7911cc6abc475d4f7140",
-    "url": "/website/static/media/flower_restaurant.de215b56.jpeg"
+    "revision": "1eae404c575c46e846cba3f2903ced72",
+    "url": "/website/static/media/flower_paint.1eae404c.jpeg"
   },
   {
-    "revision": "5d25cbe2753fb4a2f299",
-    "url": "/website/static/css/main.9927ea7c.chunk.css"
+    "revision": "407a613f3976d0058d17",
+    "url": "/website/static/css/main.1aa9e28e.chunk.css"
   },
   {
-    "revision": "5d5c9b08d2a43d119853",
-    "url": "/website/static/js/1.5d5c9b08.chunk.js"
+    "revision": "4efd4767e1f6bbf3fb2f",
+    "url": "/website/static/js/1.4efd4767.chunk.js"
   },
   {
     "revision": "df8eefd1f2dbc5f3d248",
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/website/static/media/bicycle.6ff9a3ad.jpeg"
   },
   {
-    "revision": "1eae404c575c46e846cba3f2903ced72",
-    "url": "/website/static/media/flower_paint.1eae404c.jpeg"
+    "revision": "407a613f3976d0058d17",
+    "url": "/website/static/js/main.407a613f.chunk.js"
   },
   {
-    "revision": "5d25cbe2753fb4a2f299",
-    "url": "/website/static/js/main.5d25cbe2.chunk.js"
+    "revision": "de215b566a0b7911cc6abc475d4f7140",
+    "url": "/website/static/media/flower_restaurant.de215b56.jpeg"
   },
   {
     "revision": "ac45e1ba7fa3fde95e6a75917d82fe16",
@@ -64,11 +64,7 @@ self.__precacheManifest = [
     "url": "/website/static/media/ksea.5eff3516.png"
   },
   {
-    "revision": "9b96e2841a74c86f873b1cc949600350",
-    "url": "/website/static/media/na.9b96e284.png"
-  },
-  {
-    "revision": "caf912758e1ee6a2d8b873779a742de8",
+    "revision": "96b1366d09eca38dd419d11808228979",
     "url": "/website/index.html"
   }
 ];
