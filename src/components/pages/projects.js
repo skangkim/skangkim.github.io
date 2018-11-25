@@ -13,7 +13,7 @@ class Projects extends Component {
           Dummy text goes here!
           Dummy text goes here!
           Dummy text goes here!
-          Dummy text goes here!
+          Dummy text goes here! ohohoh
           
         </p>
       </div>
