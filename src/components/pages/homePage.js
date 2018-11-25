@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import window from '../../image/window.jpeg';
+import window_pic from '../../image/window.jpeg';
 import bicycle from '../../image/bicycle.jpeg';
 import flower_paint from '../../image/flower_paint.jpeg';
 import flower_res from '../../image/flower_restaurant.jpeg';
@@ -7,15 +7,42 @@ import sculpture from '../../image/sculpture.jpeg';
 import flower_street from '../../image/flower_street.jpeg';
 
 class Homepage extends Component {
+
+  constructor() {
+    super(); 
+    this.state = {
+      width: window.innerWidth,
+    };
+  }
+
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  };
+  
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  }
+
+
   render() {
+    const { width } = this.state;
+    const isMobile = width <= 700;
+    var style = "col right";
+    if (isMobile) {
+      style="";
+    }
     return (
-        <div className="col right">
+        <div className={ style }>
           <div className="row">
             <div className="col-image">
               <img src={ flower_paint } alt="flower_paint" />
             </div>
             <div className="col-image">
-              <img src={ window } alt="window" />
+              <img src={ window_pic } alt="window" />
             </div>
             <div className="col-image">
               <img src={ sculpture } alt="sculpture" />

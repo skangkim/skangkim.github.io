@@ -7,7 +7,31 @@ import {
 import Lab from '../labComponent/lab';
 
 class Teaching extends Component {
+  constructor() {
+    super();
+    this.state = {
+      width: window.innerWidth,
+    };
+  }
+
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  };
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
   render() {
+    const { width } = this.state;
+    const isMobile = width <= 700;
+    var style = "col right";
+    if (isMobile) {
+      style="";
+    }
     var lab9url = <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwEYjy-bgUcG_MOJsos1creQkZCueBN3XYYvA2BzsT9Y7eSxg2MV8A-SLbLaWkZggJ44V-r6jd4P1R/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     var lab8url = <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRRRGPQrMZl_ugE1_BhTokUTQq3pSUEL7p3F477ck7sDXNbWQof3i98Mrgm641JNGqkpYWl6kBC7kKJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     var lab7url = <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSq_TM-Itl6gcgcUIfV-NiQJPn_7bJzrY_1tydfa4Nj4QnEuVKai55198ZK55rq5tmtzzcs9i0nmLU9/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -20,7 +44,7 @@ class Teaching extends Component {
 
     return (
       <Router> 
-        <div className="col right">
+        <div className={ style }>
           <div className="row-lab">
             <div className="col">
               <Link to="/Teaching/Lab9" className="lab-link"> Lab 9 </Link>

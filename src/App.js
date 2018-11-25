@@ -51,7 +51,7 @@ class App extends Component {
         <Router>
         <div className="App">
           <Header />
-          <div className="row">
+          <div className="row-header-mobile">
             <HorizColumns />
           </div>
           <div className="row">
