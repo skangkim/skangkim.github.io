@@ -4,7 +4,7 @@ import github from "../../icons/github.png";
 import insta from "../../icons/instagram.png";
 import linkedIn from "../../icons/linkedIn.png";
 import spotify from "../../icons/spotify.png";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 class Footer extends Component {

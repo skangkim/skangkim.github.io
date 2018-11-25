@@ -9,7 +9,6 @@ import Homepage from './components/pages/homePage'
 import {
   BrowserRouter as Router,
   Route,
-  Link,
 } from 'react-router-dom';
 
 import Products from './components/pages/products';
@@ -19,7 +18,7 @@ import Projects from './components/pages/projects'
 import Resume from './components/pages/resume'
 import Teaching from './components/pages/teaching'
 
-import Lab from './components/labComponent/lab'
+// import Lab from './components/labComponent/lab'
 
 import './Assets/css/default.min.css'
 class App extends Component {

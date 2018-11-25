@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import profile_image from '../../image/cropped-me.gif'
 
 class AboutMe extends Component {
