@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import caen from "../../icons/caen.png";
 import eecs from "../../icons/eecs.png";
 import tub from "../../icons/tub.png";
-import na from "../../icons/na.png";
+// import na from "../../icons/na.png";
 import ksea from "../../icons/ksea.png";
 
 class Resume extends Component {
