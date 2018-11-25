@@ -6,19 +6,40 @@ import tub from "../../icons/tub.png";
 import ksea from "../../icons/ksea.png";
 
 class Resume extends Component {
+  constructor() {
+    super();
+    this.state = {
+      width: window.innerWidth,
+    };
+  }
+
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  };
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
   render() {
+    const { width } = this.state;
+    const isMobile = width <= 700;
+    var style = "col right";
+    if (isMobile) {
+      style="";
+    }
     return (
-      <div className="col right">
-      
+      <div className={style}>
         <div className="resume">
           {/* Experience */}
           <p className="header top"> EXPERIENCE </p>
           <hr />
           {/* CAEN */}
           <div className="resume-row">
-            <div className="col left1">
-              <img src={ caen } alt="caen" /> 
-            </div>
+            <img src={ caen } className="col" alt="caen" /> 
             <div className="col resume-right">
               <div className="row"> 
                 <b className="company"> Computer-Aided Engineering Network </b>
@@ -43,9 +64,7 @@ class Resume extends Component {
           < div className="resume-row" />
           {/* IA */}
           <div className="resume-row">
-            <div className="col left1">
-              <img src={ eecs } alt="eecs" /> 
-            </div>
+            <img src={ eecs } className="col"  alt="eecs" /> 
             <div className="col resume-right">
               <div className="row"> 
                 <b className="company"> EECS Instructional Staff at the University of Michigan </b>
@@ -72,9 +91,7 @@ class Resume extends Component {
           <hr />
           {/* TUB Autonomous Robot Programming Project */}
           <div className="resume-row">
-            <div className="col left1">
-              <img src={ tub } alt="tub" /> 
-            </div>
+            <img src={ tub } className="col"   alt="tub" /> 
             <div className="col resume-right">
               <div className="row"> 
                 <b className="company"> Technical University of Berlin </b>
@@ -126,9 +143,7 @@ class Resume extends Component {
           <hr />
           {/* KSEA */}
           <div className="resume-row">
-            <div className="col left1">
-              <img src={ ksea } alt="ksea" /> 
-            </div>
+            <img src={ ksea }  className="col"   alt="ksea" /> 
             <div className="col resume-right">
               <div className="row"> 
                 <b className="company"> Korean American Scientists and Engineers Association (KSEA) </b>

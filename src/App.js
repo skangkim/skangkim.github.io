@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Header from './components/headerComponent/header'
 import Footer from './components/footerComponent/footer'
 import Columns from './components/columnComponent/columns'
+import HorizColumns from './components/columnComponent/columns_mobile'
 import Homepage from './components/pages/homePage'
 
 import {
@@ -22,35 +23,90 @@ import Teaching from './components/pages/teaching'
 
 import './Assets/css/default.min.css'
 class App extends Component {
-  render() {
-    return (
-      <Router>
-      <div className="App">
-        <Header />
-        <div className="row">
-          <Columns />
-          <Route exact path='/' component={Homepage} />
-          <Route exact path='/Products' component={Products} />
-          <Route exact path='/AboutMe' component={AboutMe} />
-          <Route exact path='/Hobbies' component={Hobbies} />
-          <Route exact path='/Projects' component={Projects} />
-          <Route exact path='/Resume' component={Resume} />
-          <Route exact path='/Teaching' component={Teaching} />
-          <Route exact path='/Teaching/Lab9' component={Teaching} />
-          <Route exact path='/Teaching/Lab8' component={Teaching} />
-          <Route exact path='/Teaching/Lab7' component={Teaching} />
-          <Route exact path='/Teaching/Lab6' component={Teaching} />
-          <Route exact path='/Teaching/Lab5' component={Teaching} />
-          <Route exact path='/Teaching/Lab4' component={Teaching} />
-          <Route exact path='/Teaching/Lab3' component={Teaching} />
-          <Route exact path='/Teaching/Lab2' component={Teaching} />
-          <Route exact path='/Teaching/Lab1' component={Teaching} />
+  constructor() {
+    super();
+    this.state = {
+      width: window.innerWidth,
+    };
+  }
 
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  };
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
+
+  render() {
+    const { width } = this.state;
+    const isMobile = width <= 700;
+
+    if (isMobile) {
+      return (
+        <Router>
+        <div className="App">
+          <Header />
+          <div className="row">
+            <HorizColumns />
+          </div>
+          <div className="row">
+            <Route exact path='/' component={Homepage} />
+            <Route exact path='/Products' component={Products} />
+            <Route exact path='/AboutMe' component={AboutMe} />
+            <Route exact path='/Hobbies' component={Hobbies} />
+            <Route exact path='/Projects' component={Projects} />
+            <Route exact path='/Resume' component={Resume} />
+            <Route exact path='/Teaching' component={Teaching} />
+            <Route exact path='/Teaching/Lab9' component={Teaching} />
+            <Route exact path='/Teaching/Lab8' component={Teaching} />
+            <Route exact path='/Teaching/Lab7' component={Teaching} />
+            <Route exact path='/Teaching/Lab6' component={Teaching} />
+            <Route exact path='/Teaching/Lab5' component={Teaching} />
+            <Route exact path='/Teaching/Lab4' component={Teaching} />
+            <Route exact path='/Teaching/Lab3' component={Teaching} />
+            <Route exact path='/Teaching/Lab2' component={Teaching} />
+            <Route exact path='/Teaching/Lab1' component={Teaching} />
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-      </Router>
-    );
+        </Router>
+      );
+    } else {
+      return (
+        <Router>
+        <div className="App">
+          <Header />
+          <div className="row">
+            <Columns />
+            <Route exact path='/' component={Homepage} />
+            <Route exact path='/Products' component={Products} />
+            <Route exact path='/AboutMe' component={AboutMe} />
+            <Route exact path='/Hobbies' component={Hobbies} />
+            <Route exact path='/Projects' component={Projects} />
+            <Route exact path='/Resume' component={Resume} />
+            <Route exact path='/Teaching' component={Teaching} />
+            <Route exact path='/Teaching/Lab9' component={Teaching} />
+            <Route exact path='/Teaching/Lab8' component={Teaching} />
+            <Route exact path='/Teaching/Lab7' component={Teaching} />
+            <Route exact path='/Teaching/Lab6' component={Teaching} />
+            <Route exact path='/Teaching/Lab5' component={Teaching} />
+            <Route exact path='/Teaching/Lab4' component={Teaching} />
+            <Route exact path='/Teaching/Lab3' component={Teaching} />
+            <Route exact path='/Teaching/Lab2' component={Teaching} />
+            <Route exact path='/Teaching/Lab1' component={Teaching} />
+  
+          </div>
+          <Footer />
+        </div>
+        </Router>
+      );
+    }
+    
   }
 }
 

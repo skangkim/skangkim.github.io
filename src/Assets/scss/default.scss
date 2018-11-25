@@ -11,11 +11,11 @@
   padding: 5px;
   
 }
-.row-lab:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+// .row-lab:after {
+//   content: "";
+//   display: table;
+//   clear: both;
+// }
 
 .lab-link {
   font-family: 'Courier New', Courier, monospace;
@@ -38,41 +38,35 @@
     font-size:20px;
   }
 }
+footer {
+  // padding-left: 15%;
+  margin-left: 13%;
+}
 header {
 	  
     text-align: center;
-    padding: 30px;
-    padding-left: 15%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    // padding-left: 15%;
+    margin-left: 13%;
     p {
-      // display: block;
-      
       float: center;
       font-family: serif;
-      // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       margin: 5px;
-      font-size:3vw;
+      font-size:40px;
     }
     mark {
       background-color: #d5ffac;
     }
-    // .korTitle {
-    //   float: center;
-    //   font-family: serif;
-    //   margin: 5px;
-    //   font-size:30px;
-
-    // }
     .smallTitle {
-      // font-family: 'Courier New', Courier, monospace;
       font-family: serif;
       margin: 5px;
-      font-size:1.2vw;
+      font-size: 15px;
     }
 }
 
 
 .resume {
-  margin-left: 3vw;
   hr {
     padding-top: 0px;
     margin-left: 0px;
@@ -82,26 +76,26 @@ header {
 
   }
   img {
-    display: block;
-    float: right;
-    width: 80%;
-    margin-right: 5%;
+    width: 40px;
+    height: auto;
   }
   .resume-right {
     float:left;
-    padding-left: 3%;
+    padding-left: 20px;
     width:90%;
   }
 
   .resume-row {
     margin-top: 0.5vw;
     float:left;
-    width: 100%;
+    width: 100% !important;
+    min-width: 100% !important;
+    
   }
   .header {
     width: 100%;
     float: left;
-    font-size: 20px;
+    font-size: 23px;
     margin-top: 2%;
     // margin-bottom: 2%;
   }
@@ -110,22 +104,22 @@ header {
   }
   .company {
     float: left;
-    font-size: 1.2vw;
+    font-size: 18px;
   }
   .position {
     font-style: italic;
-    font-size: 1vw;
+    font-size: 13px;
     float: left;
   }
   .locdate {
     float: right;
-    font-size: 0.8vw;
+    font-size: 12px;
   }
   .description {
     width: 90%;
     padding-top: 1%;
     padding-left: 0.5%;
-    font-size: 0.9vw;
+    font-size: 12px;
     float: left;
   }
   .lang {
@@ -138,7 +132,9 @@ header {
 }
 
 .row {
-  width: 100%;
+  width: 100% !important;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 // .row:after {
 //   content: "";
@@ -152,7 +148,7 @@ header {
 }
 
 .left {
-  width: 15%;
+  width: 13%;
   // margin-left:10px;
   text-align: center;
 }
@@ -168,11 +164,12 @@ header {
 }
 
 .col-image {
-  float: left;
+  float: right;
   width: 33.33%;
   padding: 5px;
   img {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -180,9 +177,10 @@ header {
   margin: auto;
   width: 50%;
   text-align: center;
+  float: center;
   img {
-    width: 25px;
-    
+    width: 4%;
+    height: auto;
   }
   .icon {
     opacity: 0.6;
@@ -203,8 +201,8 @@ header {
   
   // font-family:'Courier New', Courier, monospace;
   font-family: serif;
-  font-size: 1.2vw;
-  width: 100%;
+  font-size: 15px;
+  width: auto;
   a {
     // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-family: serif;
@@ -259,6 +257,7 @@ header {
   text-align: left;
   img {
     width: 15vw;
+    height: auto;
     float: left;
     padding-left: 10px;
     padding-right: 10px;
