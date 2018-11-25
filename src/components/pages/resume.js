@@ -15,11 +15,11 @@ class Resume extends Component {
           <p className="header top"> EXPERIENCE </p>
           <hr />
           {/* CAEN */}
-          <div className="row">
+          <div className="resume-row">
             <div className="col left1">
               <img src={ caen } alt="caen" /> 
             </div>
-            <div className="col right">
+            <div className="col resume-right">
               <div className="row"> 
                 <b className="company"> Computer-Aided Engineering Network </b>
                 <div className="locdate"> Ann Arbor, MI </div>   
@@ -40,13 +40,13 @@ class Resume extends Component {
                 error messages on Slack channel using a Slack bot API </li>
             </ul>
           </div>
-          < div className="row" />
+          < div className="resume-row" />
           {/* IA */}
-          <div className="row">
+          <div className="resume-row">
             <div className="col left1">
               <img src={ eecs } alt="eecs" /> 
             </div>
-            <div className="col right">
+            <div className="col resume-right">
               <div className="row"> 
                 <b className="company"> EECS Instructional Staff at the University of Michigan </b>
                 <div className="locdate"> Ann Arbor, MI </div>   
@@ -71,11 +71,11 @@ class Resume extends Component {
           <p className="header"> PROJECTS  </p>
           <hr />
           {/* TUB Autonomous Robot Programming Project */}
-          <div className="row">
+          <div className="resume-row">
             <div className="col left1">
               <img src={ tub } alt="tub" /> 
             </div>
-            <div className="col right">
+            <div className="col resume-right">
               <div className="row"> 
                 <b className="company"> Technical University of Berlin </b>
                 <div className="locdate"> Berlin, Germany </div>   
@@ -96,11 +96,11 @@ class Resume extends Component {
           </div>
           < div className="row" />
           {/* iOS */}
-          <div className="row">
-            <div className="col left1">
+          <div className="resume-row">
+            {/* <div className="col left1">
               <img src={ na } alt="N/A" /> 
-            </div>
-            <div className="col right">
+            </div> */}
+            <div className="col resume-right">
               <div className="row"> 
                 <b className="company"> iOS App Group Project </b>
                 <div className="locdate"> Ann Arbor, MI </div>   
@@ -125,11 +125,11 @@ class Resume extends Component {
           <p className="header"> LEADERSHIP </p>
           <hr />
           {/* KSEA */}
-          <div className="row">
+          <div className="resume-row">
             <div className="col left1">
               <img src={ ksea } alt="ksea" /> 
             </div>
-            <div className="col right">
+            <div className="col resume-right">
               <div className="row"> 
                 <b className="company"> Korean American Scientists and Engineers Association (KSEA) </b>
                 <div className="locdate"> Ann Arbor, MI </div>   

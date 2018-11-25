@@ -12,7 +12,7 @@ class Columns extends Component {
               <br />
               <Link to="/AboutMe" className="about"> About Me </Link>
               <br />
-              <Link to="/Resume" className="resume"> Resume </Link>
+              <Link to="/Resume" className="resume-tab"> Resume </Link>
               <br />
               <Link to="/Projects" className="projects"> Projects </Link>
               <br />
