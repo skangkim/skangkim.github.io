@@ -29,8 +29,10 @@ class Teaching extends Component {
     const { width } = this.state;
     const isMobile = width <= 700;
     var style = "col right";
+    var style2 = "";
     if (isMobile) {
-      style="";
+      style="row-header-mobile";
+      style2 = "row-lab";
     }
     var lab9url = <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwEYjy-bgUcG_MOJsos1creQkZCueBN3XYYvA2BzsT9Y7eSxg2MV8A-SLbLaWkZggJ44V-r6jd4P1R/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     var lab8url = <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRRRGPQrMZl_ugE1_BhTokUTQq3pSUEL7p3F477ck7sDXNbWQof3i98Mrgm641JNGqkpYWl6kBC7kKJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -45,38 +47,20 @@ class Teaching extends Component {
     return (
       <Router> 
         <div className={ style }>
-          <div className="row-lab">
-            <div className="col">
-              <Link to="/Teaching/Lab9" className="lab-link"> Lab 9 </Link>
-            </div>
-            <div className="col">
-              <Link to="/Teaching/Lab8" className="lab-link"> Lab 8 </Link>
-            </div>
-            <div className="col">
-              <Link to="/Teaching/Lab7" className="lab-link"> Lab 7 </Link>
-            </div>
-            <div className="col">
-              <Link to="/Teaching/Lab6" className="lab-link"> Lab 6 </Link>
-            </div>
-            <div className="col">
-              <Link to="/Teaching/Lab5" className="lab-link"> Lab 5 </Link>
-            </div>
-            <div className="col">
-              <Link to="/Teaching/Lab4" className="lab-link"> Lab 4 </Link>
-            </div>
-            <div className="col">
-              <Link to="/Teaching/Lab3" className="lab-link"> Lab 3 </Link>
-            </div>
-            <div className="col">
-              <Link to="/Teaching/Lab2" className="lab-link"> Lab 2 </Link>
-            </div>
-            <div className="col">
-              <Link to="/Teaching/Lab1" className="lab-link"> Lab 1 </Link>
-            </div>
+          <div className={ style2 }>
+            <Link to="/Teaching" className="lab-link"> EECS 281 Lab Section 33: </Link>
+            <Link to="/Teaching/Lab9" className="lab-link"> Lab 9 </Link>
+            <Link to="/Teaching/Lab8" className="lab-link"> Lab 8 </Link>
+            <Link to="/Teaching/Lab7" className="lab-link"> Lab 7 </Link>
+            <Link to="/Teaching/Lab6" className="lab-link"> Lab 6 </Link>
+            <Link to="/Teaching/Lab5" className="lab-link"> Lab 5 </Link>
+            <Link to="/Teaching/Lab4" className="lab-link"> Lab 4 </Link>
+            <Link to="/Teaching/Lab3" className="lab-link"> Lab 3 </Link>
+            <Link to="/Teaching/Lab2" className="lab-link"> Lab 2 </Link>
+            <Link to="/Teaching/Lab1" className="lab-link"> Lab 1 </Link>
           </div>
 
-          <div className="row">
-            {/* <Route exact path='/Teaching' component={Teaching} /> */}
+          <div className="row-lab">
             <Route exact path='/Teaching/Lab10' render={(props)=> <Lab {...props} labtitle="Lab 10" topic="n/a" laburl="n/a"/>} />
             <Route exact path='/Teaching/Lab9' render={(props)=> <Lab {...props} labtitle="Lab 9" topic="Graphs and MST" laburl={lab9url} />} />
             <Route exact path='/Teaching/Lab8' render={(props)=> <Lab {...props} labtitle="Lab 8" topic="Binary Trees, Binary Search Trees, AVL Trees" laburl={lab8url} />} />
@@ -87,6 +71,11 @@ class Teaching extends Component {
             <Route exact path='/Teaching/Lab3' render={(props)=> <Lab {...props} labtitle="Lab 3" topic="Arrays, Linked Lists, Vectors, Stacks & Queues" laburl={lab3url} />} />
             <Route exact path='/Teaching/Lab2' render={(props)=> <Lab {...props} labtitle="Lab 2" topic="Complexity Analysis" laburl={lab2url} />} />
             <Route exact path='/Teaching/Lab1' render={(props)=> <Lab {...props} labtitle="Lab 1" topic="Intro to 281 & projects" laburl={lab1url} />} />
+          </div>
+
+          <div className="teaching-description">
+            <br/>
+            These are the lab slides I made for my EECS 281 (Data structures & algorithms) lab section! Click on the lab tabs to see the slides
           </div>
         </div>
       </Router>

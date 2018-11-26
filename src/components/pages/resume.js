@@ -53,10 +53,10 @@ class Resume extends Component {
           </div>
           <div className="description">
             <ul>
-              <li> Initiated and developed a college-wide an error reporting Windows Desktop tool to facilitate efficient 
+              <li> Initiated and developed a college-wide an error reporting Windows Desktop tool using python to facilitate efficient 
                 communication between users and CAEN software engineers </li>
               <li> Reported 1,000+ records by constructing an automatic software deployment reporting tool using python and the Google Cloud Platform 
-                to streamline diagnostic problems for software engineers </li>
+                for software engineers to diagnose problems </li>
               <li> Improved efficiency of diagnosis of deployment errors by constructing a script that automatically sends 
                 error messages on Slack channel using a Slack bot API </li>
             </ul>
@@ -79,7 +79,7 @@ class Resume extends Component {
           <div className="description">
             <ul>
               <li> Assisted a class of 730 students in designing, constructing, and testing projects that utilize data structures and algorithms
-                during Office Hours as well as online Q&A web service called Piazza </li>
+                during Office Hours as well as online Q&A web service </li>
               <li> Instructed 2-hour weekly lab sessions covering course materials, software tools, code optimization tips, and exam questions </li>
               
             </ul>
