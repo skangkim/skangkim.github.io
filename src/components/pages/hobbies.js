@@ -27,10 +27,10 @@ class Hobbies extends Component {
       style="";
     }
     return (
-      <div className={ style }>
-        <h1>
-          Under Construction :o 
-        </h1>
+      <div className="home hobby">
+        Under Construction !!
+        <br/>
+        ~ Trynna show you guys the 1000000% ~
       </div>
     );
   }

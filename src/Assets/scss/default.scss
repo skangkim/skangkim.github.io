@@ -79,7 +79,14 @@
   }
 }
 
-//////////////////////////////
+////////////////////////////// HOBBIES //////////////////////////////
+
+.hobby {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+}
+
+////////////////////////////// 
 
 .row-lab {
   width: 100%;
@@ -144,6 +151,22 @@ header {
   }
   .smallTitle {
     font-size: 20px;
+  }
+  .u {
+    margin: auto;
+    display: inline;
+  }
+  .u:hover {
+    color: rgb(255, 204, 0);
+    font-weight: bold;
+  }
+  .m {
+    margin: auto;
+    display: inline;
+  }
+  .m:hover {
+    color: rgb(58, 58, 249);
+    font-weight: bold;
   }
 }
 

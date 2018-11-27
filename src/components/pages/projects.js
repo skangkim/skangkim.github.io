@@ -20,28 +20,11 @@ class Projects extends Component {
     this.setState({ width: window.innerWidth });
   };
   render() {
-    const { width } = this.state;
-    const isMobile = width <= 700;
-    var style = "col right";
-    if (isMobile) {
-      style="";
-    }
     return (
-      <div className="home">
-        <div className={ style }>
-          <h1>
-            PROJECTS
-          </h1>
-          <p>
-              PROJECTS
-            Dummy text goes here!
-            Dummy text goes here!
-            Dummy text goes here!
-            Dummy text goes here!
-            Dummy text goes here! ohohoh
-            
-          </p>
-        </div>
+      <div className="home hobby">
+        Under Construction !!
+        <br/>
+        ~ Trynna show you guys the 1000000% ~
       </div>
     );
   }

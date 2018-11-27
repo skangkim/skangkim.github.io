@@ -11,7 +11,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <Menu width={ '200px' }>
+        <Menu width={ '200px' } isOpen={false}>
           <Link to="/" className="main">Main </Link>
           <Link to="/AboutMe" className="about"> About Me </Link>
           <Link to="/Resume" className="resume-tab"> Resume </Link>
@@ -22,7 +22,7 @@ class Header extends Component {
         <div className="row">
           <p>  Sukang Sabina Kim</p>
         </div>
-        <div className="smallTitle" > Computer Science @ U of M </div>
+        <div className="smallTitle" > Computer Science @ <div className="u"> U </div> of <div className="m"> M </div> </div>
         <br />
       </header>
     );
