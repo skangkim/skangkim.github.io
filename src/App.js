@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
+import { slide as Menu } from 'react-burger-menu'
 // components
 import Header from './components/headerComponent/header'
 import Footer from './components/footerComponent/footer'
-import Columns from './components/columnComponent/columns'
+// import Columns from './components/columnComponent/columns'
 import HorizColumns from './components/columnComponent/columns_mobile'
 import Homepage from './components/pages/homePage'
 
@@ -12,7 +12,7 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Products from './components/pages/products';
+// import Products from './components/pages/products';
 import AboutMe from './components/pages/aboutMe'
 import Hobbies from './components/pages/hobbies'
 import Projects from './components/pages/projects'
@@ -46,66 +46,33 @@ class App extends Component {
     const { width } = this.state;
     const isMobile = width <= 700;
 
-    if (isMobile) {
-      return (
-        <Router>
-        <div className="App">
-          <Header />
-          <div className="row-header-mobile">
-            <HorizColumns />
-          </div>
-          <div className="row">
-            <Route exact path='/' component={Homepage} />
-            <Route exact path='/Products' component={Products} />
-            <Route exact path='/AboutMe' component={AboutMe} />
-            <Route exact path='/Hobbies' component={Hobbies} />
-            <Route exact path='/Projects' component={Projects} />
-            <Route exact path='/Resume' component={Resume} />
-            <Route exact path='/Teaching' component={Teaching} />
-            <Route exact path='/Teaching/Lab9' component={Teaching} />
-            <Route exact path='/Teaching/Lab8' component={Teaching} />
-            <Route exact path='/Teaching/Lab7' component={Teaching} />
-            <Route exact path='/Teaching/Lab6' component={Teaching} />
-            <Route exact path='/Teaching/Lab5' component={Teaching} />
-            <Route exact path='/Teaching/Lab4' component={Teaching} />
-            <Route exact path='/Teaching/Lab3' component={Teaching} />
-            <Route exact path='/Teaching/Lab2' component={Teaching} />
-            <Route exact path='/Teaching/Lab1' component={Teaching} />
-          </div>
-          <Footer />
+    return (
+      <Router>
+      <div className="App">
+        <Header />
+        <div className="row"> 
+          <Route exact path='/' component={Homepage} />
+          {/* <Route exact path='/Products' component={Products} /> */}
+          <Route exact path='/AboutMe' component={AboutMe} />
+          <Route exact path='/Hobbies' component={Hobbies} />
+          <Route exact path='/Projects' component={Projects} />
+          <Route exact path='/Resume' component={Resume} />
+          <Route exact path='/Teaching' component={Teaching} />
+          <Route exact path='/Teaching/Lab9' component={Teaching} />
+          <Route exact path='/Teaching/Lab8' component={Teaching} />
+          <Route exact path='/Teaching/Lab7' component={Teaching} />
+          <Route exact path='/Teaching/Lab6' component={Teaching} />
+          <Route exact path='/Teaching/Lab5' component={Teaching} />
+          <Route exact path='/Teaching/Lab4' component={Teaching} />
+          <Route exact path='/Teaching/Lab3' component={Teaching} />
+          <Route exact path='/Teaching/Lab2' component={Teaching} />
+          <Route exact path='/Teaching/Lab1' component={Teaching} />
+
         </div>
-        </Router>
-      );
-    } else {
-      return (
-        <Router>
-        <div className="App">
-          <Header />
-          <div className="row">
-            <Columns />
-            <Route exact path='/' component={Homepage} />
-            <Route exact path='/Products' component={Products} />
-            <Route exact path='/AboutMe' component={AboutMe} />
-            <Route exact path='/Hobbies' component={Hobbies} />
-            <Route exact path='/Projects' component={Projects} />
-            <Route exact path='/Resume' component={Resume} />
-            <Route exact path='/Teaching' component={Teaching} />
-            <Route exact path='/Teaching/Lab9' component={Teaching} />
-            <Route exact path='/Teaching/Lab8' component={Teaching} />
-            <Route exact path='/Teaching/Lab7' component={Teaching} />
-            <Route exact path='/Teaching/Lab6' component={Teaching} />
-            <Route exact path='/Teaching/Lab5' component={Teaching} />
-            <Route exact path='/Teaching/Lab4' component={Teaching} />
-            <Route exact path='/Teaching/Lab3' component={Teaching} />
-            <Route exact path='/Teaching/Lab2' component={Teaching} />
-            <Route exact path='/Teaching/Lab1' component={Teaching} />
-  
-          </div>
-          <Footer />
-        </div>
-        </Router>
-      );
-    }
+        <Footer />
+      </div>
+      </Router>
+    );
     
   }
 }

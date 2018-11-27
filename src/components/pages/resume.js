@@ -4,6 +4,7 @@ import eecs from "../../icons/eecs.png";
 import tub from "../../icons/tub.png";
 // import na from "../../icons/na.png";
 import ksea from "../../icons/ksea.png";
+import mEngin from "../../icons/mEngin.jpeg";
 
 class Resume extends Component {
   constructor() {
@@ -27,15 +28,37 @@ class Resume extends Component {
   render() {
     const { width } = this.state;
     const isMobile = width <= 700;
-    var style = "col right";
+    var style = "home";
     if (isMobile) {
-      style="";
+      style="home";
     }
     return (
       <div className={style}>
         <div className="resume">
+          {/* EDUCATION */}
+          <p className="header top"> EDUCATION </p>
+          <hr />
+          {/* UM ENGINEERING */}
+          <div className="resume-row">
+            <img src={ mEngin } className="col" alt="mEngin" /> 
+            <div className="col resume-right">
+              <div className="row"> 
+                <b className="company"> UNIVERSITY OF MICHIGAN </b>
+                <div className="locdate"> Ann Arbor, MI </div>   
+              </div>
+              <div className="row"> 
+                <div className="position"> Bachelor of Science in Engineering in Computer Science </div>
+                <div className="locdate"> May 2020 </div>   
+              </div>
+            </div>
+          </div>
+          <div className="description">
+            <b>Coursework: </b> Web Database and Information Systems, Data Structures & Algorithms, Intro to Computer Organzation, and Applied Linear Algebra <br/>
+            <b>Winter 2019 Coursework: </b> Intro to Operating Systems and Computer Vision <br />
+          </div>
+
           {/* Experience */}
-          <p className="header top"> EXPERIENCE </p>
+          <p className="header"> EXPERIENCE </p>
           <hr />
           {/* CAEN */}
           <div className="resume-row">

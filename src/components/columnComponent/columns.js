@@ -7,8 +7,7 @@ class Columns extends Component {
         // <div className="row">
         <div className="col left"> 
           <div className="tab">
-
-              <Link to="/" className="main">Main</Link>
+              <Link to="/" className="main">Main </Link>
               <br />
               <Link to="/AboutMe" className="about"> About Me </Link>
               <br />

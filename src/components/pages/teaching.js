@@ -46,8 +46,8 @@ class Teaching extends Component {
 
     return (
       <Router> 
-        <div className={ style }>
-          <div className={ style2 }>
+        <div className="home">
+          <div className="row-lab">
             <Link to="/Teaching" className="lab-link"> EECS 281 Lab Section 33: </Link>
             <Link to="/Teaching/Lab9" className="lab-link"> Lab 9 </Link>
             <Link to="/Teaching/Lab8" className="lab-link"> Lab 8 </Link>

@@ -24,9 +24,9 @@ class AboutMe extends Component {
   render() {
     const { width } = this.state;
     const isMobile = width <= 700;
-    var style = "col right";
+    var style = "home";
     if (isMobile) {
-      style="";
+      style="home";
       var add_padding = <br />;
     }
     return (

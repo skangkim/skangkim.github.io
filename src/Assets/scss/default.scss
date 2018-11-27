@@ -1,13 +1,89 @@
 @import "_config.scss";
 @import "tab.scss";
 
-// @mixin overlayColor($color) {
-//   background-color: rgba($color, 0.9);
-//   &:hover { background-color: rgba($color, 0.3); }
-// }
+// burger 
+/* Position and sizing of clickable cross button */
+.bm-burger-button {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  left: 36px;
+  top: 36px;
+}
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #c28e8e;
+}
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 10px;
+  width: 10px;
+}
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #c28e8e;
+}
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(250, 0, 0, 0.03);
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #ffffff;
+  padding: 2.5em 1.5em 0;
+  font-size: 2em;
+  a {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: initial;
+    color: black;
+    margin: 5px;
+  }
+  .main {
+    color: black;
+    // font-family: 'Times New Roman', Times, serif;
+  }
+  .main:hover {
+    color: #ffcce8;
+  }
+  .about {
+    color: black;
+  }
+  .about:hover {
+    color: #ffcccc;
+  }
+  .resume-tab {
+    color: black;
+  }
+  
+  .resume-tab:hover {
+    color: #f0c191;
+  }
+  .projects {
+    color: black;
+  }
+  .projects:hover {
+    color: #99ccff;
+  }
+  .teaching {
+    color: black;
+  }
+  .teaching:hover {
+    color: #c5c5f5;
+  }
+  .hobbies {
+    color: black;
+  }
+  .hobbies:hover {
+    color: #88e4b6;
+  }
+}
+
+//////////////////////////////
 
 .row-lab {
-  margin-top: 3%;
+  width: 100%;
+  text-align: center;
 }
 
 .lab-link {
@@ -33,16 +109,23 @@
 }
 
 .lab {
+  margin-top: 3%;
   padding-left: 3%;
+
   p {
-    font-family: 'Courier New', Courier, monospace;
-    float:left;
-    font-size:20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    padding-bottom: 10px;
   }
+  
 }
 footer {
   // padding-left: 15%;
-  margin-left: 13%;
+  // margin-left: 13%;?
+  hr {
+    margin-top: 30px;
+    width: 90%;
+  }
 }
 header {
   // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -50,23 +133,16 @@ header {
   font-style: italic;
   font-weight: 100;
   font-variant-ligatures: normal;
-  // font-family: serif;
   text-align: center;
-  padding-top: 30px;
   padding-bottom: 30px;
-  // padding-left: 15%;
-  margin-left: 13%;
   p {
     float: center;
-    // font-family: serif;
     margin: 5px;
+    margin-top: 30px;
     font-size:50px;
     letter-spacing: 1px;
   }
   .smallTitle {
-    // font-family: serif;
-    // margin: 5px;
-    // font-style: initial;
     font-size: 20px;
   }
 }
@@ -85,8 +161,7 @@ header {
   img {
     width: 4%;
     height: auto;
-    // max-width: 4%;
-    // min-width: 30px;
+    min-width: 30px;
   }
   .resume-right {
     float:left;
@@ -99,6 +174,7 @@ header {
     float:left;
     width: 100% !important;
     min-width: 100% !important;
+    margin-left: 10px;
     
   }
   .header {
@@ -130,6 +206,7 @@ header {
     padding-left: 0%;
     font-size: 13px;
     float: left;
+    margin-left: 10px;
     // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     ul li {
       padding: 0px;
@@ -145,9 +222,13 @@ header {
 }
 
 .row {
-  width: 100% !important;
+  width: 100%;
   margin-left: 0px;
   margin-right: 0px;
+  .home {
+    width: 85%;
+    margin: auto;
+  }
 }
 
 .row-header-mobile {
@@ -215,9 +296,10 @@ header {
 
 .teaching-description {
   font-size:15px;
-  text-align: left;
+  text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: gray;
+
 }
 
 
@@ -231,47 +313,7 @@ header {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration-line: none;
     text-decoration-color: black;
-      
   }
-  .main {
-    color: black;
-    // font-family: 'Times New Roman', Times, serif;
-  }
-  .main:hover {
-    color: #ffcce8;
-  }
-  .about {
-    color: black;
-  }
-  .about:hover {
-    color: #ffcccc;
-  }
-  .resume-tab {
-    color: black;
-  }
-  
-  .resume-tab:hover {
-    color: #f0c191;
-  }
-  .projects {
-    color: black;
-  }
-  .projects:hover {
-    color: #99ccff;
-  }
-  .teaching {
-    color: black;
-  }
-  .teaching:hover {
-    color: #c5c5f5;
-  }
-  .hobbies {
-    color: black;
-  }
-  .hobbies:hover {
-    color: #88e4b6;
-  }
-  
 }
 
 /* css for about me | aboutMe */ 

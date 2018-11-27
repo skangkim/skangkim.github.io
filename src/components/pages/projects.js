@@ -27,19 +27,21 @@ class Projects extends Component {
       style="";
     }
     return (
-      <div className={ style }>
-        <h1>
-          PROJECTS
-        </h1>
-        <p>
+      <div className="home">
+        <div className={ style }>
+          <h1>
             PROJECTS
-          Dummy text goes here!
-          Dummy text goes here!
-          Dummy text goes here!
-          Dummy text goes here!
-          Dummy text goes here! ohohoh
-          
-        </p>
+          </h1>
+          <p>
+              PROJECTS
+            Dummy text goes here!
+            Dummy text goes here!
+            Dummy text goes here!
+            Dummy text goes here!
+            Dummy text goes here! ohohoh
+            
+          </p>
+        </div>
       </div>
     );
   }
